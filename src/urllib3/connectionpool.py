@@ -327,7 +327,7 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
                     ) from None
 
                 log.warning(
-                    "Connection pool is full, discarding connection: %s. Connection pool size: %s",
+                    "Connection pool is full, discarding connection: %s. Connection pool size (this is a custom added log): %s",
                     self.host,
                     self.maxsize,
                 )
